@@ -36,7 +36,7 @@ class _DrawerPage extends State<DrawerPage> {
         child: new Text("About"),
         applicationName: "Application Name",
         applicationVersion: "v1.0.0",
-        applicationIcon: new Icon(Icons.),
+        applicationIcon: new Icon(Icons.adb),
         icon: new Icon(Icons.info));
     return Drawer(
       child: ListView(

@@ -3,6 +3,8 @@ import 'package:router_demo/pages/list_demo.dart';
 import 'dropdown_page.dart';
 import 'girdview_page.dart';
 import 'drawer_page.dart';
+import 'calculator_page.dart';
+import 'tab_nav_page.dart';
 
 class MainPage extends StatelessWidget {
   static const MAIN_PAGE_ROUTE = "/mainPage";
@@ -16,7 +18,9 @@ class MainPage extends StatelessWidget {
           buildButton("list",context),
           buildButton("dropdownButton", context),
           buildButton("gridview", context),
-          buildButton("drawerpage", context)
+          buildButton("drawerpage", context),
+          buildButton("calculatorPage", context),
+          buildButton("tabnavpage", context),
         ],
       ),
     );
@@ -50,6 +54,12 @@ class MainPage extends StatelessWidget {
       case "drawerpage": 
         Navigator.of(context).pushNamed(DrawerPage.DRAWER_PAGE_ROUTE);
         break;
+      case "calculatorPage": 
+        Navigator.of(context).pushNamed(CalculatorPage.CALCUATOR_PAGE_ROUTE);
+        break;
+      case "tabnavpage": 
+      Navigator.of(context).pushNamed(TabNavPage.TAB_NAV_PAGE_ROUTE);
+      break;
       default:
     }
   }

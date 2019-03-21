@@ -6,7 +6,8 @@ import 'pages/girdview_page.dart';
 import 'pages/drawer_page.dart';
 import 'pages/setting_page.dart';
 import 'pages/account_page.dart';
-
+import 'pages/calculator_page.dart';
+import 'pages/tab_nav_page.dart';
 
 void main() => runApp(MaterialApp(
   routes: <String, WidgetBuilder>{
@@ -18,7 +19,8 @@ void main() => runApp(MaterialApp(
       DrawerPage.DRAWER_PAGE_ROUTE: (BuildContext context) => DrawerPage(),
       AccountPage.ACCOUNT_PAGE_ROUTE: (BuildContext context) => AccountPage(),
       SettingPage.SETTING_PAGE_ROUTE: (BuildContext context) => SettingPage(),
-      
+      CalculatorPage.CALCUATOR_PAGE_ROUTE: (BuildContext context) => CalculatorPage(),
+      TabNavPage.TAB_NAV_PAGE_ROUTE: (BuildContext context) => TabNavPage(),
     },
   home: Scaffold(
     appBar: AppBar(
